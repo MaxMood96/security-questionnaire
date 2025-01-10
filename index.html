@@ -8,7 +8,7 @@
   <meta content="Bikeshed version ac5ea272d, updated Fri Dec 6 15:45:15 2024 -0800" name="generator">
   <link href="https://www.w3.org/TR/security-privacy-questionnaire/" rel="canonical">
   <link href="https://www.w3.org/2008/site/images/favicon.ico" rel="icon">
-  <meta content="a58987964e53626d3092275a282c0d5867846388" name="revision">
+  <meta content="df94481df092590281f3a659646f222d1d6e3e26" name="revision">
   <meta content="dark light" name="color-scheme">
   <link href="https://www.w3.org/StyleSheets/TR/2021/dark.css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css">
 <style>/* Boilerplate: style-autolinks */
@@ -570,7 +570,7 @@ dfn > a.self-link::before      { content: "#"; }
   <div class="head">
    <p data-fill-with="logo"><a class="logo" href="https://www.w3.org/"> <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72"> </a> </p>
    <h1 class="p-name no-ref" id="title">Self-Review Questionnaire: Security and Privacy</h1>
-   <p id="w3c-state"><a href="https://www.w3.org/standards/types/#ED">Editor’s Draft</a>, <time class="dt-updated" datetime="2025-01-08">8 January 2025</time></p>
+   <p id="w3c-state"><a href="https://www.w3.org/standards/types/#ED">Editor’s Draft</a>, <time class="dt-updated" datetime="2025-01-10">10 January 2025</time></p>
    <details open>
     <summary>More details about this document</summary>
     <div data-fill-with="spec-metadata">
@@ -626,7 +626,7 @@ technologies.</p>
      <ol class="toc">
       <li><a href="#howtouse"><span class="secno">1.1</span> <span class="content">How To Use The Questionnaire</span></a>
       <li><a href="#resources"><span class="secno">1.2</span> <span class="content">Additional resources</span></a>
-      <li><a href="#reviews"><span class="secno">1.3</span> <span class="content">TAG, PING, the Security Interest Group, and this questionnaire</span></a>
+      <li><a href="#reviews"><span class="secno">1.3</span> <span class="content">TAG, Privacy WG, Security IG, and this questionnaire</span></a>
      </ol>
     <li>
      <a href="#questions"><span class="secno">2</span> <span class="content">Questions to Consider</span></a>
@@ -668,7 +668,7 @@ technologies.</p>
   on future navigations back to the document? </span></a>
       <li><a href="#non-fully-active"><span class="secno">2.19</span> <span class="content"> What happens when a document that uses your feature gets disconnected? </span></a>
       <li><a href="#error-handling"><span class="secno">2.20</span> <span class="content"> Does your spec define when and how new kinds of errors should be raised? </span></a>
-      <li><a href="#accessibility-devices"><span class="secno">2.21</span> <span class="content"> Does your feature allow sites to learn about the users use of assistive technology? </span></a>
+      <li><a href="#accessibility-devices"><span class="secno">2.21</span> <span class="content"> Does your feature allow sites to learn about the user’s use of assistive technology? </span></a>
       <li><a href="#missing-questions"><span class="secno">2.22</span> <span class="content"> What should this questionnaire have asked? </span></a>
      </ol>
     <li>
@@ -743,16 +743,17 @@ to fix the issues.</p>
 Periodically revisit this questionnaire and continue to consider the questions,
 particularly as a design changes over time.</p>
    <h3 class="heading settled" data-level="1.2" id="resources"><span class="secno">1.2. </span><span class="content">Additional resources</span><a class="self-link" href="#resources"></a></h3>
-   <p>The Mitigating Browser Fingerprinting in Web Specifications <a data-link-type="biblio" href="#biblio-fingerprinting-guidance" title="Mitigating Browser Fingerprinting in Web Specifications">[FINGERPRINTING-GUIDANCE]</a> document published by PING goes into
+   <p>The Mitigating Browser Fingerprinting in Web Specifications <a data-link-type="biblio" href="#biblio-fingerprinting-guidance" title="Mitigating Browser Fingerprinting in Web Specifications">[FINGERPRINTING-GUIDANCE]</a> document published by the Privacy WG goes into
 further depth about browser fingerprinting and should be considered in
 parallel with this document.</p>
    <p>The IETF’s RFC about privacy considerations, <a data-link-type="biblio" href="#biblio-rfc6973" title="Privacy Considerations for Internet Protocols">[RFC6973]</a>, is a
 wonderful resource, particularly section 7.</p>
-   <h3 class="heading settled" data-level="1.3" id="reviews"><span class="secno">1.3. </span><span class="content">TAG, PING, the Security Interest Group, and this questionnaire</span><a class="self-link" href="#reviews"></a></h3>
+   <h3 class="heading settled" data-level="1.3" id="reviews"><span class="secno">1.3. </span><span class="content">TAG, Privacy WG, Security IG, and this questionnaire</span><a class="self-link" href="#reviews"></a></h3>
    <p>Before requesting
 privacy and
-security reviews from the <a href="https://www.w3.org/Privacy/IG/">Privacy Interest Group
-(PING)</a> and the <a href="https://www.w3.org/groups/ig/security/">Security Interest Group</a>,
+security reviews from
+the <a href="https://www.w3.org/groups/wg/privacy/">Privacy Working Group</a> and
+the <a href="https://www.w3.org/groups/ig/security/">Security Interest Group</a>,
 write "Security Considerations" and
 "Privacy Considerations" sections in your document, as described in <a href="#considerations">§ 2.16 Does this specification have both "Security Considerations" and "Privacy
   Considerations" sections?</a>.  Answering the questions in this
@@ -1120,7 +1121,7 @@ a sufficiently fine-grained gyroscope
 as a microphone <a data-link-type="biblio" href="#biblio-gyrospeechrecognition" title="Gyrophone: Recognizing Speech from Gyroscope Signals">[GYROSPEECHRECOGNITION]</a>.
 This can be mitigated by lowering the gyroscope’s sample rates. </p>
    <p class="example" id="example-b7a8d534"><a class="self-link" href="#example-b7a8d534"></a> Ambient light sensors could allow an attacker to learn whether or not a
-user had visited given links <a data-link-type="biblio" href="#biblio-olejnik-als" title="Privacy analysis of Ambient Light Sensors">[OLEJNIK-ALS]</a>. </p>
+user had visited given links <a data-link-type="biblio" href="#biblio-olejnik-als" title="Stealing sensitive browser data with the W3C Ambient Light Sensor API">[OLEJNIK-ALS]</a>. </p>
    <p class="example" id="example-af6d78b4"><a class="self-link" href="#example-af6d78b4"></a> Even relatively short lived data, like the battery status, may be able to
 serve as an identifier <a data-link-type="biblio" href="#biblio-olejnik-battery" title="The leaking battery: A privacy analysis of the HTML5 Battery Status API">[OLEJNIK-BATTERY]</a>. </p>
    <h3 class="question heading settled" data-level="2.10" id="string-to-script"><span class="secno">2.10. </span><span class="content"> Do features in this specification enable new script execution/loading
@@ -1177,7 +1178,7 @@ See <a href="https://wicg.github.io/webusb/#security-and-privacy"><cite>WebUSB A
 mode) or changes to the underlying system (e.g. installing an ‘app’ on a
 smartphone home screen) may surprise users or obscure security / privacy
 controls.  To the extent that your feature does allow for the changing of a
-user agent’s UI, can it effect security / privacy controls?  What analysis
+user agent’s UI, can it affect security / privacy controls?  What analysis
 confirmed this conclusion?</p>
    <h3 class="question heading settled" data-level="2.13" id="temporary-id"><span class="secno">2.13. </span><span class="content"> What temporary identifiers do the features in this specification create or
   expose to the web? </span><a class="self-link" href="#temporary-id"></a></h3>
@@ -1336,7 +1337,7 @@ can be the source of unintended information leaks and privacy vulnerabilities.
 Triggering an error,
 what information is included with (or learnable by) the error,
 and which parties in an application can learn about the error can all
-effect (or weaken) user privacy.
+affect (or weaken) user privacy.
 Proposal authors should carefully think
 through each of these dimensions to ensure that user privacy and security are
 not harmed through error handling.</p>
@@ -1358,12 +1359,12 @@ Spec authors should
 carefully think through what information such debugging information exposes,
 and whether (and which) actors on a page are able to access that information.</p>
    </ul>
-   <h3 class="question heading settled" data-level="2.21" id="accessibility-devices"><span class="secno">2.21. </span><span class="content"> Does your feature allow sites to learn about the users use of assistive technology? </span><a class="self-link" href="#accessibility-devices"></a></h3>
+   <h3 class="question heading settled" data-level="2.21" id="accessibility-devices"><span class="secno">2.21. </span><span class="content"> Does your feature allow sites to learn about the user’s use of assistive technology? </span><a class="self-link" href="#accessibility-devices"></a></h3>
     The Web is designed to work for everyone, and Web standards should be designed
 for people using assistive technology (<abbr title="assistive technology">AT</abbr>) just as much as for users relying
 on mice, keyboards, and touch screens. Accessibility and universal access
 are core to the W3C’s mission. 
-   <p>Specification authors though should keep in mind that Web users that rely on
+   <p>Specification authors should keep in mind that Web users who rely on
 assistive technology face some unique risks when using the Web.
 The use of assistive technologies may cause those Web users to stand
 out among other Web users, increasing the risk of unwanted reidentification
@@ -1371,15 +1372,14 @@ and privacy harm. Similarly, some Web site operators may try to
 discriminate against Web users who rely on assistive technology.</p>
    <p>Feature designers and <abbr title="specification">spec</abbr> authors should therefore be thoughtful and
 careful to limit if, and what, websites can learn about the use of assistive
-technologies. <abbr>Spec</abbr> authors must minimize both what information about
-assistive technology use their features reveal, both explicitly
-and implicitly. Examples of <em>explicit</em> information about assistive technology
+technologies. <abbr>Spec</abbr> authors must minimize the explicit and implicit information that
+their features reveal about assistive technology use.
+Examples of <em>explicit</em> information about assistive technology
 include device identifiers or model names. Examples of <em>implicit</em> information about the use of assistive technology might include
 user interaction patterns that are unlikely to be generated by a
 mouse, keyboard, or touch screen.</p>
-   <p class="example" id="example-305e438b"><a class="self-link" href="#example-305e438b"></a> The <a data-link-type="biblio" href="#biblio-wai-aria-13" title="Accessible Rich Internet Applications (WAI-ARIA) 1.3">[wai-aria-1.3]</a> defines additional markup authors can use to make
-their pages easier to navigate with assistive technology. The <abbr>spec</abbr> includes the [<code>aria-hidden</code>](https://w3c.github.io/aria/#aria-hidden)
-attribute, that site authors can use to indicate that certain content
+   <p class="example" id="example-c9a13292"><a class="self-link" href="#example-c9a13292"></a> <a data-link-type="biblio" href="#biblio-wai-aria-13" title="Accessible Rich Internet Applications (WAI-ARIA) 1.3">[wai-aria-1.3]</a> defines additional markup authors can use to make
+their pages easier to navigate with assistive technology. The <abbr>spec</abbr> includes the <code><a data-link-type="element-sub" href="https://www.w3.org/TR/wai-aria-1.3/#aria-hidden" id="ref-for-aria-hidden">aria-hidden</a></code> attribute, that site authors can use to indicate that certain content
 should be hidden from assistive technology. </p>
    <p>A malicious site author might
 abuse the <code>aria-hidden</code> attribute to learn if a user is using assistive
@@ -1768,7 +1768,8 @@ Tantek Çelik,
 Thomas Steiner,
 Wendy Seltzer,
 and
-the many current and former participants in PING, the Security Interest Group, and the TAG
+the many current and former participants in PING, the Privacy Working Group,
+the Security Interest Group, and the TAG
 for their contributions to this document.</p>
    <p>Special thanks to
 Rakina Zata Amni
@@ -1839,6 +1840,11 @@ We hope we haven’t made it (much) worse.</p>
      <li><span class="dfn-paneled" id="05d1562e">third-party context</span>
     </ul>
    <li>
+    <a data-link-type="biblio">[WAI-ARIA-1.3]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="720fb713">aria-hidden</span>
+    </ul>
+   <li>
     <a data-link-type="biblio">[XHR]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="61cd38cd">FormData</span>
@@ -1859,7 +1865,7 @@ We hope we haven’t made it (much) worse.</p>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
    <dt id="biblio-adding-permission">[ADDING-PERMISSION]
-   <dd>Nick Doty. <a href="https://github.com/w3cping/adding-permissions"><cite>Adding another permission? A guide</cite></a>. URL: <a href="https://github.com/w3cping/adding-permissions">https://github.com/w3cping/adding-permissions</a>
+   <dd>Nick Doty. <a href="https://github.com/w3c/adding-permissions"><cite>Adding another permission? A guide</cite></a>. URL: <a href="https://github.com/w3c/adding-permissions">https://github.com/w3c/adding-permissions</a>
    <dt id="biblio-battery-status">[BATTERY-STATUS]
    <dd>Anssi Kostiainen. <a href="https://w3c.github.io/battery/"><cite>Battery Status API</cite></a>. URL: <a href="https://w3c.github.io/battery/">https://w3c.github.io/battery/</a>
    <dt id="biblio-comcast">[COMCAST]
@@ -1893,7 +1899,7 @@ We hope we haven’t made it (much) worse.</p>
    <dt id="biblio-homakov">[HOMAKOV]
    <dd>Egor Homakov. <a href="http://homakov.blogspot.de/2014/01/using-content-security-policy-for-evil.html"><cite>Using Content-Security-Policy for Evil</cite></a>. URL: <a href="http://homakov.blogspot.de/2014/01/using-content-security-policy-for-evil.html">http://homakov.blogspot.de/2014/01/using-content-security-policy-for-evil.html</a>
    <dt id="biblio-olejnik-als">[OLEJNIK-ALS]
-   <dd>Lukasz Olejnik. <a href="https://blog.lukaszolejnik.com/privacy-of-ambient-light-sensors/"><cite>Privacy analysis of Ambient Light Sensors</cite></a>. URL: <a href="https://blog.lukaszolejnik.com/privacy-of-ambient-light-sensors/">https://blog.lukaszolejnik.com/privacy-of-ambient-light-sensors/</a>
+   <dd>Lukasz Olejnik. <a href="https://blog.lukaszolejnik.com/stealing-sensitive-browser-data-with-the-w3c-ambient-light-sensor-api/"><cite>Stealing sensitive browser data with the W3C Ambient Light Sensor API</cite></a>. URL: <a href="https://blog.lukaszolejnik.com/stealing-sensitive-browser-data-with-the-w3c-ambient-light-sensor-api/">https://blog.lukaszolejnik.com/stealing-sensitive-browser-data-with-the-w3c-ambient-light-sensor-api/</a>
    <dt id="biblio-olejnik-battery">[OLEJNIK-BATTERY]
    <dd>Lukasz Olejnik; et al. <a href="https://eprint.iacr.org/2015/616"><cite>The leaking battery: A privacy analysis of the HTML5 Battery Status API</cite></a>. URL: <a href="https://eprint.iacr.org/2015/616">https://eprint.iacr.org/2015/616</a>
    <dt id="biblio-olejnik-payments">[OLEJNIK-PAYMENTS]
@@ -2141,6 +2147,7 @@ let dfnPanelData = {
 "6a1335c3": {"dfnID":"6a1335c3","dfnText":"content decryption module","external":true,"refSections":[{"refs":[{"id":"ref-for-cdm"}],"title":"2.6. \n  Do the features in your specification introduce state\n  that persists across browsing sessions?\n"}],"url":"https://www.w3.org/TR/encrypted-media/#cdm"},
 "6ced0379": {"dfnID":"6ced0379","dfnText":"indexedDB","external":true,"refSections":[{"refs":[{"id":"ref-for-dom-windoworworkerglobalscope-indexeddb"}],"title":"2.6. \n  Do the features in your specification introduce state\n  that persists across browsing sessions?\n"}],"url":"https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb"},
 "6e4a4b23": {"dfnID":"6e4a4b23","dfnText":"connect-src","external":true,"refSections":[{"refs":[{"id":"ref-for-connect-src"}],"title":"2.4. \n  How do the features in your specification deal with sensitive information?\n"}],"url":"https://w3c.github.io/webappsec-csp/#connect-src"},
+"720fb713": {"dfnID":"720fb713","dfnText":"aria-hidden","external":true,"refSections":[{"refs":[{"id":"ref-for-aria-hidden"}],"title":"2.21. \n  Does your feature allow sites to learn about the user\u2019s use of assistive technology?\n"}],"url":"https://www.w3.org/TR/wai-aria-1.3/#aria-hidden"},
 "87fcd40c": {"dfnID":"87fcd40c","dfnText":"iframe","external":true,"refSections":[{"refs":[{"id":"ref-for-the-iframe-element"},{"id":"ref-for-the-iframe-element\u2460"}],"title":"2.17. \n  Do features in your specification enable origins to downgrade default\n  security protections?\n"}],"url":"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element"},
 "a08a3717": {"dfnID":"a08a3717","dfnText":"become disconnected","external":true,"refSections":[{"refs":[{"id":"ref-for-becomes-disconnected"}],"title":"2.18. \n  What happens when a document that uses your feature is kept alive in BFCache\n  (instead of getting destroyed) after navigation, and potentially gets reused\n  on future navigations back to the document?\n"},{"refs":[{"id":"ref-for-becomes-disconnected\u2460"}],"title":"2.19. \n  What happens when a document that uses your feature gets disconnected?\n"}],"url":"https://html.spec.whatwg.org/multipage/infrastructure.html#becomes-disconnected"},
 "active-network-attacker": {"dfnID":"active-network-attacker","dfnText":"active network attacker","external":false,"refSections":[{"refs":[{"id":"ref-for-active-network-attacker"}],"title":"2.6. \n  Do the features in your specification introduce state\n  that persists across browsing sessions?\n"},{"refs":[{"id":"ref-for-active-network-attacker\u2460"}],"title":"4.5. \n  Secure Contexts\n"}],"url":"#active-network-attacker"},
@@ -2560,6 +2567,7 @@ let refsData = {
 "https://w3c.github.io/webappsec-csp/#form-action": {"displayText":"form-action","export":true,"for_":[],"level":"3","normative":true,"shortname":"csp","spec":"csp3","status":"current","text":"form-action","type":"dfn","url":"https://w3c.github.io/webappsec-csp/#form-action"},
 "https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature": {"displayText":"policy-controlled feature","export":true,"for_":[],"level":"1","normative":true,"shortname":"permissions-policy","spec":"permissions-policy-1","status":"current","text":"policy-controlled feature","type":"dfn","url":"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature"},
 "https://www.w3.org/TR/encrypted-media/#cdm": {"displayText":"content decryption module","export":true,"for_":[],"level":"","normative":true,"shortname":"encrypted-media","spec":"encrypted-media","status":"anchor-block","text":"content decryption module","type":"dfn","url":"https://www.w3.org/TR/encrypted-media/#cdm"},
+"https://www.w3.org/TR/wai-aria-1.3/#aria-hidden": {"displayText":"aria-hidden","export":true,"for_":["html-global"],"level":"","normative":true,"shortname":"wai-aria-1.3","spec":"wai-aria-1.3","status":"anchor-block","text":"aria-hidden","type":"element-attr","url":"https://www.w3.org/TR/wai-aria-1.3/#aria-hidden"},
 "https://xhr.spec.whatwg.org/#formdata": {"displayText":"FormData","export":true,"for_":[],"level":"1","normative":true,"shortname":"xhr","spec":"xhr","status":"current","text":"FormData","type":"interface","url":"https://xhr.spec.whatwg.org/#formdata"},
 };
 
